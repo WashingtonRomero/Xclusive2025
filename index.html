@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xclusive Barbershop</title>
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap para grid y componentes -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+</head>
+<body>
+  <!-- Header: Logo en la esquina izquierda y navegación en la derecha -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="imagenes/logo.jpg" alt="Xclusive Barbershop Logo">
+      </div>
+      <nav class="nav-buttons">
+        <ul>
+          <li><a href="#galeria">GALERÍA</a></li>
+          <li><a href="#reserva">RESERVAS</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
+          <li><a href="#direccion">UBICACIÓN</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- En lugar de la imagen de portada, se muestra la palabra Xclusive -->
+    <div class="hero-text">
+      <h1>Xclusive</h1>
+    </div>
+  </header>
+  
+  <!-- Sección Galería: 9 imágenes de clientes, organizadas en 2 columnas -->
+  <section id="galeria" class="container">
+    <h2>Galería</h2>
+    <div class="row">
+      <div class="col-md-6 gallery-item">
+        <img src="imagenes/cliente.jpg" alt="Cliente">
+        <p>"Estilo y actitud renovados."</p>
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="imagenes/cliente1.jpg" alt="Cliente 1">
+        <p>"Innovación en cada corte."</p>
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="imagenes/cliente2.jpg" alt="Cliente 2">
+        <p>"El poder del estilo."</p>
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="imagenes/cliente3.jpg" alt="Cliente 3">
+        <p>"Transformando imágenes con precisión."</p>
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="imagenes/cliente4.jpg" alt="Cliente 4">
+        <p>"Elegancia en cada detalle."</p>
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="imagenes/cliente5.jpg" alt="Cliente 5">
+        <p>"La perfección del grooming moderno."</p>
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="imagenes/cliente6.jpg" alt="Cliente 6">
+        <p>"Corte preciso, actitud segura."</p>
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="imagenes/cliente7.jpg" alt="Cliente 7">
+        <p>"Más que un corte, una declaración de estilo."</p>
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="imagenes/cliente8.jpg" alt="Cliente 8">
+        <p>"Cada corte cuenta una historia."</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección Cortadores: Imágenes de Jona y Sol -->
+  <section id="barberos" class="container">
+    <h2>Nuestros Cortadores</h2>
+    <div class="row">
+      <div class="col-md-6 barbero-item">
+        <img src="imagenes/jona.jpg" alt="Jona" class="barbero-img">
+        <p>"Jona, el maestro de la precisión y el estilo."</p>
+      </div>
+      <div class="col-md-6 barbero-item">
+        <img src="imagenes/sol.jpg" alt="Sol" class="barbero-img">
+        <p>"Sol, iluminando cada corte con creatividad y pasión."</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección Local: Imágenes del local en mayor ancho -->
+  <section id="local" class="container-fluid">
+    <h2>Local</h2>
+    <div class="row">
+      <div class="col-md-6 local-item">
+        <img src="imagenes/local.jpg" alt="Local" class="local-img">
+        <p>"Un espacio donde cada detalle inspira grandeza."</p>
+      </div>
+      <div class="col-md-6 local-item">
+        <img src="imagenes/local1.jpg" alt="Local 1" class="local-img">
+        <p>"Innovación y calidad se unen en nuestro local."</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección Reserva: Lista de precios y botón que redirige a Setmore -->
+  <section id="reserva" class="container">
+    <h2>Lista de Precios</h2>
+    <ul class="price-list">
+      <li><strong>CORTE DE CABELLO</strong> - $420</li>
+      <li><strong>PERFILADO DE BARBA</strong> - $180</li>
+      <li><strong>CORTE + PERFILADO DE BARBA</strong> - $500</li>
+      <li><strong>LAVADO</strong> - $150</li>
+      <li><strong>MECHAS</strong> - $1200</li>
+      <li><strong>COLOR GLOBAL</strong> - Desde $2000</li>
+    </ul>
+    <a href="https://www.setmore.com" target="_blank" class="reserva-btn">RESERVAS</a>
+  </section>
+  
+  <!-- Sección Ubicación: Dirección y horarios con fondo oscuro.
+       El ícono de ubicación se ha envuelto en un enlace que abre Google Maps -->
+  <section id="direccion" class="container">
+    <h2>Ubicación</h2>
+    <div class="direccion">
+      <a href="https://www.google.com/maps/search/?api=1&query=Av.+Rivera+4127,+Montevideo" target="_blank">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      Av. Rivera 4127, Montevideo<br>
+      <strong>Horarios:</strong> MARTES A SABADO de 12:00hs a 20:00hs
+    </div>
+  </section>
+  
+  <!-- Sección Contacto: Solo iconos de redes sociales sin texto adicional -->
+  <section id="contacto" class="container">
+    <h2>Contacto</h2>
+    <div class="contact-icons text-center">
+      <a href="https://instagram.com/xclusive_barbershop" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/59898101003" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="mailto:jolygomes@hotmail.com" target="_blank">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Scripts: Desplazamiento suave -->
+  <script src="scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+

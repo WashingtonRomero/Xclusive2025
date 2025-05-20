@@ -1,0 +1,237 @@
+/* Fondo global con la imagen fondo.png */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('imagenes/fondo.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #fff; /* Texto blanco por defecto */
+}
+
+/* Transición para efecto en imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover: aumenta un poco el tamaño y agrega un glow */
+.gallery-item img:hover,
+.barbero-img:hover,
+.local-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(255,255,255,0.9), 0 0 10px rgba(0,0,0,0.8);
+}
+
+/* Header: Logo y navegación */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo: Aumentado al triple (de 40px a 120px) */
+.logo img {
+  width: 120px;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
+}
+
+/* Navegación: Letras en blanco con contorno negro */
+.nav-buttons ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.nav-buttons ul li {
+  margin-left: 20px;
+}
+.nav-buttons ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+               -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Hero Text: La palabra Xclusive en cursiva, usando Lucida Calligraphy, tamaño 12em, con efecto LED y contorno negro */
+.hero-text {
+  text-align: center;
+  margin: 20px 0;
+}
+.hero-text h1 {
+  font-size: 12em;
+  font-family: "Lucida Calligraphy", cursive;
+  font-style: italic;
+  color: #fff;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 40px #fff;
+}
+
+/* Títulos de sección (Galería, Nuestros Cortadores, etc.) centrados con mayor margen inferior */
+section h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+               -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Galería: Imágenes en 2 columnas, altura 500px, sin recorte */
+.gallery-item {
+  margin-bottom: 20px;
+}
+.gallery-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
+}
+/* Si la cantidad es impar, la última imagen se centra */
+.gallery-item:last-child:nth-child(odd) {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallery-item p {
+  font-size: 1.25em;
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+               -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Cortadores: Imágenes de 500px y texto centrado */
+.barbero-img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
+}
+.barbero-item p {
+  font-size: 1.25em;
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+               -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Local: Uso de container-fluid para mayor ancho, imágenes aumentadas a 600px de altura */
+.local-img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
+}
+.local-item p {
+  font-size: 1.25em;
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+               -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Lista de Precios: Fondo semitransparente, borde y textos con contorno */
+.price-list {
+  list-style: none;
+  padding: 20px;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  border-left: 4px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.price-list li {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+               -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Botón de Reserva: Más grande, centrado, con contorno */
+.reserva-btn {
+  display: block;
+  width: 250px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+               -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Ubicación: Fondo oscuro, padding, border-radius */
+.direccion {
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.3em;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+               -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.direccion i {
+  margin-right: 8px;
+}
+
+/* Contacto: Fondo oscuro, padding, border-radius */
+.contact-icons {
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px auto;
+}
+.contact-icons a {
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+               -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-buttons ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-buttons ul li {
+    margin: 10px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
